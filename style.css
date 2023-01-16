@@ -214,7 +214,7 @@ section{
     width:100%;
     margin:1rem 0;
 }
-
+/*
 .icons-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -223,7 +223,7 @@ section{
     padding-bottom: 5rem;
     background: #eee;
 }
-
+*/
 .icons-container .icons{
     background:#fff;
     display: flex;
@@ -335,13 +335,13 @@ section{
     background: var(--yellow);
 }
 
-.services .box-container{
+.order .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
 }
 
-.services .box-container .box{
+.order .box-container .box{
     padding:2rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
@@ -349,7 +349,7 @@ section{
     text-align: center;
 }
 
-.services .box-container .box i{
+.order .box-container .box i{
     height:6rem;
     width:6rem;
     line-height: 6rem;
@@ -360,27 +360,27 @@ section{
     color:var(--black);
 }
 
-.services .box-container .box h3{
+.order .box-container .box h3{
     font-size: 2.2rem;
     color:var(--black);
 }
 
-.services .box-container .box p{
+.order .box-container .box p{
     line-height: 1.8;
     padding:1rem 0;
     font-size: 1.4rem;
     color:var(--light-color);
 }
 
-.services .box-container .box:hover{
+.order .box-container .box:hover{
     background: var(--black);
 }
 
-.services .box-container .box:hover h3{
+.order .box-container .box:hover h3{
     color:#fff;
 }
 
-.services .box-container .box:hover p{
+.order .box-container .box:hover p{
     color:#eee;
 }
 

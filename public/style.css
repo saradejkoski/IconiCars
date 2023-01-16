@@ -66,6 +66,20 @@ section{
     text-align: center;
 }
 
+#loginButton #registerButton #deleteSession
+{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:var(--light-yellow);
+    color:var(--black);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
 .btn:hover{
     background:var(--yellow);
 }
@@ -138,7 +152,7 @@ section{
     top:0;
 }
 
-.login-form-container form{
+.login-form-container newUser{
     margin:2rem;
     text-align: center;
     padding:2rem;
@@ -149,19 +163,41 @@ section{
     background: #fff;
 }
 
-.login-form-container form .buttons{
+.login-form-container newUser .buttons{
     display: flex;
     gap:1rem;
     align-items: center;
 }
 
-.login-form-container form .btn{
+.login-form-container newUser .btn{
     display: block;
     width:100%;
     margin:.5rem 0;
 }
+#emailInput{
+    margin:.7rem 0;
+    width: 100%;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+    border:var(--border);
+    padding:1rem 1.2rem;
+    border-radius: .5rem;
 
-.login-form-container form .box{
+}
+
+#passwordInput{
+    margin:.7rem 0;
+    width: 100%;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+    border:var(--border);
+    padding:1rem 1.2rem;
+    border-radius: .5rem;
+
+}
+.login-form-container newUser .box{
     margin:.7rem 0;
     width: 100%;
     font-size: 1.6rem;
@@ -172,18 +208,18 @@ section{
     border-radius: .5rem;
 }
 
-.login-form-container form p{
+.login-form-container newUser p{
     padding:1rem 0;
     font-size: 1.5rem;
     color:var(--light-color);
 }
 
-.login-form-container form p a{
+.login-form-container newUser p a{
     color:var(--yellow);
     text-decoration: underline;
 }
 
-.login-form-container form h3{
+.login-form-container newUser h3{
     padding-bottom:1rem;
     font-size: 2.5rem;
     color:var(--black);
@@ -426,7 +462,7 @@ section{
 
 
 
-
+/*
 .reviews .review-slider{
     padding-bottom: 3rem;
 }
@@ -470,7 +506,7 @@ section{
     color:var(--yellow);
     font-size: 1.7rem;
 }
-
+*/
 .contact .row{
     display: flex;
     flex-wrap: wrap;

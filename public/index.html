@@ -28,7 +28,6 @@
         <a href="#vehicles">vehicles</a>
         <a href="#order">order</a>
         <a href="#featured">featured</a>
-        <a href="#reviews">reviews</a>
         <a href="#contact">contact</a>
     </nav>
 
@@ -39,23 +38,23 @@
 
 </header>
 
+<div id="userLoggedIn">
+    <button id="deleteSession">Logout</button>
+</div>
+
 <div class="login-form-container">
 
     <span id="close-login-form" class="fas fa-times"></span>
+    <div id="newUser">
 
-    <form action="">
         <h3>user login</h3>
-        <input type="email" placeholder="email" class="box">
-        <input type="password" placeholder="password" class="box">
-        <p> forget your password <a href="#">click here</a> </p>
-        <input type="submit" value="login" class="btn">
-        <p>or login with</p>
-        <div class="buttons">
-            <a href="#" class="btn"> google </a>
-            <a href="#" class="btn"> facebook </a>
-        </div>
-        <p> don't have an account <a href="#">create one</a> </p>
-    </form>
+        <input type="email" placeholder="email" id="emailInput" required>
+        <input type="password" placeholder="password" id="passwordInput" required>
+        <button id="registerButton">Register</button>
+        <p>or</p>
+        <button id="loginButton">Login</button>
+
+    </div>
 
 </div>
 
@@ -63,7 +62,7 @@
 
     <h3 data-speed="-2" class="home-parallax">find your car</h3>
 
-    <img data-speed="5" class="home-parallax" src="image/home-img.png" alt="">
+    <img data-speed="5" class="home-parallax" src="/image/home-img.png" alt="">
 
     <a data-speed="7" href="#featured" class="btn home-parallax">explore cars</a>
 
@@ -437,6 +436,7 @@
 </section>
 
 -->
+<!--
 <section class="reviews" id="reviews">
 
     <h1 class="heading"> client's <span>review</span> </h1>
@@ -542,6 +542,7 @@
     </div>
 
 </section>
+-->
 
 <section class="contact" id="contact">
 
@@ -551,7 +552,7 @@
 
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.524429805893!2d16.380158415805273!3d48.157973057718905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da9977c8a12a3%3A0xf3c966f81242b2ff!2sFH%20Campus%20Wien!5e0!3m2!1sde!2sat!4v1671531589056!5m2!1sde!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
 
-        <form action="">
+       <!-- <form action="">
             <h3>your feedback</h3>
             <label>
                 <input type="text" placeholder="your name" class="box">
@@ -566,7 +567,7 @@
                 <textarea placeholder="your message" class="box" cols="30" rows="10"></textarea>
             </label>
             <input type="submit" value="send message" class="btn">
-        </form>
+        </form> -->
 
     </div>
 
@@ -591,7 +592,6 @@
             <a href="#"> <i class="fas fa-arrow-right"></i> vehicles </a>
             <a href="#"> <i class="fas fa-arrow-right"></i> order </a>
             <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
             <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
         </div>
 
@@ -622,7 +622,7 @@
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-<script src="script.js"></script>
+<script src="main.js"></script>
 
 </body>
 </html>

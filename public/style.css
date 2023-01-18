@@ -89,7 +89,7 @@ section{
 }
 
 .header .logo span{
-    color:var(-blue);
+    color:var(--blue);
 }
 
 .header .navbar a{
@@ -99,7 +99,7 @@ section{
 }
 
 .header .navbar a:hover{
-    color:var(-blue);
+    color:var(--blue);
 }
 
 #login-btn .btn{
@@ -190,7 +190,7 @@ section{
 }
 
 .login-form-container #login p a{
-    color:var(-blue);
+    color:var(--blue);
     text-decoration: underline;
 }
 
@@ -224,7 +224,7 @@ section{
     border-radius: .5rem;
 
 }
-.login-form-container newUser .box{
+.login-form-container #login .box{
     margin:.7rem 0;
     width: 100%;
     font-size: 1.6rem;
@@ -235,18 +235,18 @@ section{
     border-radius: .5rem;
 }
 
-.login-form-container newUser p{
+.login-form-container #login p{
     padding:1rem 0;
     font-size: 1.5rem;
     color:var(--light-color);
 }
 
-.login-form-container newUser p a{
-    color:var(-blue);
+.login-form-container #login p a{
+    color:var(--blue);
     text-decoration: underline;
 }
 
-.login-form-container newUser h3{
+.login-form-container #login h3{
     padding-bottom:1rem;
     font-size: 2.5rem;
     color:var(--black);
@@ -310,7 +310,7 @@ section{
 
 .icons-container .icons .content h3{
     font-size: 2.5rem;
-    color:var(-blue);
+    color:var(--blue);
 }
 
 .icons-container .icons .content p{
@@ -323,7 +323,7 @@ section{
 }
 
 .icons-container .icons:hover i{
-    background:var(-blue);
+    background:var(--blue);
 }
 
 .icons-container .icons:hover .content h3{
@@ -369,7 +369,7 @@ section{
 
 .vehicles .vehicles-slider .box .content .price{
     font-size: 2.2rem;
-    color:var(-blue);
+    color:var(--blue);
     padding:1rem 0;
     font-weight: bolder;
 }
@@ -390,12 +390,12 @@ section{
 
 .vehicles .vehicles-slider .box .content span{
     font-size: 1rem;
-    color:var(-blue);
+    color:var(--blue);
     padding:0 .5rem;
 }
 
 .swiper-pagination-bullet-active{
-    background: var(-blue);
+    background: var(--blue);
 }
 
 .order .box-container{
@@ -419,7 +419,7 @@ section{
     border-radius: 50%;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    background:var(-blue);
+    background:var(--blue);
     color:var(--black);
 }
 
@@ -479,7 +479,7 @@ section{
 
 .featured .featured-slider .box .content .stars i{
     font-size: 1.7rem;
-    color:var(-blue);
+    color:var(---blue);
 }
 
 .featured .featured-slider .box .content .price{
@@ -530,7 +530,7 @@ section{
 }
 
 .reviews .review-slider .box .content .stars i{
-    color:var(-blue);
+    color:var(--blue);
     font-size: 1.7rem;
 }
 */

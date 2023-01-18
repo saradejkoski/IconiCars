@@ -90,13 +90,15 @@ loginButton.addEventListener("click",() => {
 registerButton.addEventListener("click",() => {
     var email = emailInput.value;
     var password = passwordInput.value;
-
+    if(password.length < 10) {
+        alert("Error: Password must be at least 10 characters");
+    }
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() {
         console.log(JSON.parse(this.responseText).status);
         var isLoggedIn = JSON.parse(this.responseText).status;
         if(isLoggedIn){
-            alert("Willkommen auf unsere Platform!");
+            alert("Willkommen auf unserer Platform!");
             document.getElementById("logout-btn").style.setProperty('visibility', "visible");
             document.getElementById("login-btn").style.setProperty('visibility', "hidden");
             //reloadNotes();

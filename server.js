@@ -106,9 +106,6 @@ app.post('/login', (req, res) => {
 
 app.post('/register', (req, res) => {
     const { email, password } = req.body;
-    if(password.length < 10) {
-        alert("Error: Password must be at least 10 characters");
-    }
     if (email && password) {
         const exists = users.some(
             user => user.email === email

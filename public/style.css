@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
-    --yellow:#89cff0;
-    --light-yellow:#add8e6;
+    --babyblue:#89cff0;
+    --blue:#add8e6;
     --black:#000000;
     --light-color:#36454F;
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
@@ -48,7 +48,7 @@ section{
     bottom:1rem; left:0;
     height: 100%;
     width: 100%;
-    background: var(--light-yellow);
+    background: var(--babyblue);
     z-index: -1;
     clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
 }
@@ -57,7 +57,7 @@ section{
     display: inline-block;
     margin-top: 1rem;
     padding:.8rem 3rem;
-    background:var(--light-yellow);
+    background:var(--babyblue);
     color:var(--black);
     cursor: pointer;
     font-size: 1.7rem;
@@ -68,7 +68,7 @@ section{
 
 
 .btn:hover{
-    background:var(--yellow);
+    background:var(--blue);
 }
 
 .header{
@@ -89,7 +89,7 @@ section{
 }
 
 .header .logo span{
-    color:var(--yellow);
+    color:var(-blue);
 }
 
 .header .navbar a{
@@ -99,7 +99,7 @@ section{
 }
 
 .header .navbar a:hover{
-    color:var(--yellow);
+    color:var(-blue);
 }
 
 #login-btn .btn{
@@ -190,7 +190,7 @@ section{
 }
 
 .login-form-container #login p a{
-    color:var(--yellow);
+    color:var(-blue);
     text-decoration: underline;
 }
 
@@ -242,7 +242,7 @@ section{
 }
 
 .login-form-container newUser p a{
-    color:var(--yellow);
+    color:var(-blue);
     text-decoration: underline;
 }
 
@@ -310,7 +310,7 @@ section{
 
 .icons-container .icons .content h3{
     font-size: 2.5rem;
-    color:var(--yellow);
+    color:var(-blue);
 }
 
 .icons-container .icons .content p{
@@ -323,7 +323,7 @@ section{
 }
 
 .icons-container .icons:hover i{
-    background:var(--yellow);
+    background:var(-blue);
 }
 
 .icons-container .icons:hover .content h3{
@@ -369,7 +369,7 @@ section{
 
 .vehicles .vehicles-slider .box .content .price{
     font-size: 2.2rem;
-    color:var(--yellow);
+    color:var(-blue);
     padding:1rem 0;
     font-weight: bolder;
 }
@@ -390,12 +390,12 @@ section{
 
 .vehicles .vehicles-slider .box .content span{
     font-size: 1rem;
-    color:var(--yellow);
+    color:var(-blue);
     padding:0 .5rem;
 }
 
 .swiper-pagination-bullet-active{
-    background: var(--yellow);
+    background: var(-blue);
 }
 
 .order .box-container{
@@ -419,7 +419,7 @@ section{
     border-radius: 50%;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    background:var(--yellow);
+    background:var(-blue);
     color:var(--black);
 }
 
@@ -479,7 +479,7 @@ section{
 
 .featured .featured-slider .box .content .stars i{
     font-size: 1.7rem;
-    color:var(--yellow);
+    color:var(-blue);
 }
 
 .featured .featured-slider .box .content .price{
@@ -530,7 +530,7 @@ section{
 }
 
 .reviews .review-slider .box .content .stars i{
-    color:var(--yellow);
+    color:var(-blue);
     font-size: 1.7rem;
 }
 */
@@ -580,7 +580,7 @@ section{
 }
 
 .footer{
-    background: var(--light-yellow);
+    background: var(--babyblue);
     padding-bottom: 8rem;
 }
 

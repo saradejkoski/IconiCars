@@ -552,23 +552,22 @@
 
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.524429805893!2d16.380158415805273!3d48.157973057718905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da9977c8a12a3%3A0xf3c966f81242b2ff!2sFH%20Campus%20Wien!5e0!3m2!1sde!2sat!4v1671531589056!5m2!1sde!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
 
-       <!-- <form action="">
+        <form onsubmit="sendMail(); reset(); return false">
             <h3>your feedback</h3>
             <label>
-                <input type="text" placeholder="your name" class="box">
+                <input type="text" id="name" placeholder="your name" required class="box">
             </label>
             <label>
-                <input type="email" placeholder="your email" class="box">
+                <input type="email"  id="costumer" placeholder="your email" required class="box">
             </label>
             <label>
-                <input type="tel" placeholder="subject" class="box">
+                <input type="text"  id="phone" placeholder="phone no." required class="box">
             </label>
             <label>
-                <textarea placeholder="your message" class="box" cols="30" rows="10"></textarea>
+                <textarea placeholder="your message"  id="message" required class="box" rows="10"></textarea>
             </label>
-            <input type="submit" value="send message" class="btn">
-        </form> -->
-
+            <button type="submit" class="btn">Send</button>
+        </form>
     </div>
 
 </section>
@@ -603,15 +602,6 @@
             <a href="#"> <i class="fas fa-map-marker-alt"></i> Vienna, Austria - 1100 </a>
         </div>
 
-        <!--<div class="box">
-            <h3>contact info</h3>
-            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
-        </div>-->
-
     </div>
 
     <div class="credit"> created by Iconicars Team | all rights reserved </div>
@@ -621,8 +611,33 @@
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="main.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init('M1L4TUrOU0g_Y9VZ7');
+    })();
+</script>
+<script>
+    function sendMail(){
+        let name= document.getElementById("name").value;
+        let userMail= document.getElementById("costumer").value;
+        let message = document.getElementById("message").value;
+
+            var params = {
+                from_name: name,
+                from_email: userMail,
+                message: message
+            };
+            emailjs.send('service_x8gv3tl','template_u0zf0w6', params)
+                .then(function (res) {
+                    console.log('SUCCESS!');
+                })
+    }
+
+
+</script>
 
 </body>
 </html>

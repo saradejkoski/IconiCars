@@ -1,20 +1,3 @@
-let menu = document.querySelector('#menu-btn');
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () =>{
-    menu.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
-}
-
-document.querySelector('#login-btn').onclick = () =>{
-    document.querySelector('.login-form-container').classList.toggle('active');
-}
-
-document.querySelector('#close-login-form').onclick = () =>{
-    document.querySelector('.login-form-container').classList.remove('active');
-}
-
-
 const xhttp = new XMLHttpRequest();
 xhttp.onload = function() {
     // variable if user is logged in, JSON to Text.
@@ -40,6 +23,7 @@ const passwordInput = document.getElementById("passwordInput");
 const loginButton = document.getElementById("loginButton");
 const registerButton = document.getElementById("registerButton");
 const logoutButton = document.getElementById("logout-btn");
+const sendButton = document.getElementById("sendButton");
 
 
 /*
@@ -114,6 +98,26 @@ registerButton.addEventListener("click",() => {
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(JSON.stringify({email,password}));
 });
+
+
+
+
+let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+
+document.querySelector('#login-btn').onclick = () =>{
+    document.querySelector('.login-form-container').classList.toggle('active');
+}
+
+document.querySelector('#close-login-form').onclick = () =>{
+    document.querySelector('.login-form-container').classList.remove('active');
+}
+
 
 window.onscroll = () =>{
 

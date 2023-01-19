@@ -46,6 +46,7 @@ loginButton.addEventListener("click",() => {
     var email = emailInput.value;
     var password = passwordInput.value;
 
+
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() {
         console.log(JSON.parse(this.responseText).status);

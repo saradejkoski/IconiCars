@@ -137,53 +137,57 @@
 <section class="order" id="order">
 
     <h1 class="heading"> place an <span>order</span> </h1>
+<!--
+<div class="container">
 
-    <div class="box-container">
+    <label>From Date</label>
+    <input type="date" name="" max="" id="fromDate">
+    <br><br>
+    <label>To Date</label>
+    <input type="date" name="" max="" id="toDate">
+</div>
+-->
+    <div class="row">
+    <form onsubmit="sendOrder(); reset(); return false">
+        <h3>your order</h3>
+        <label>
+            <input type="text" id="nameOrder" placeholder="your name" required class="box">
+        </label>
+        <label>
+            <input type="email"  id="costumerOrder" placeholder="your email" required class="box">
+        </label>
 
-        <div class="box">
-            <i class="fas fa-car"></i>
-            <h3>car selling</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
-            <a href="#" class="btn"> read more</a>
-        </div>
+        <label>
+            <input type="text"  id="wishedCar" placeholder="Wished Car" required class="box">
+        </label>
 
-        <div class="box">
-            <i class="fas fa-tools"></i>
-            <h3>parts repair</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
-            <a href="#" class="btn"> read more</a>
-        </div>
+        <label>
+            <input type="text"  id="date" placeholder="Renting time period" required class="box">
+        </label>
 
-        <div class="box">
-            <i class="fas fa-car-crash"></i>
-            <h3>car insurance</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
-            <a href="#" class="btn"> read more</a>
-        </div>
 
-        <div class="box">
-            <i class="fas fa-car-battery"></i>
-            <h3>battery replacement</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
-            <a href="#" class="btn"> read more</a>
-        </div>
+        <label>
+            <input type="text"  id="phoneOrder" placeholder="phone no." required class="box">
+        </label>
+        <label>
+            <textarea placeholder="your message"  id="messageOrder" class="box" rows="10"></textarea>
+        </label>
+        <button type="submit" class="btn">Send</button>
+    </form>
 
-        <div class="box">
-            <i class="fas fa-gas-pump"></i>
-            <h3>oil change</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
-            <a href="#" class="btn"> read more</a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-headset"></i>
-            <h3>24/7 support</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
-            <a href="#" class="btn"> read more</a>
+        <div id="availableCars">
+        <h3>Available Cars</h3> <br>
+        <a href="#featured"> <i class="fas fa-arrow-right"></i> View all our available Cars </a> <br>
+            <br>
+        <p>Porsche 911 Carrera Cabriolet (2021)</p>  <br>
+        <p>BMW 318d (2019)</p> <br>
+        <p>Mercedes A 160 (2018)</p> <br>
+        <p>Audi Q3 (2018)</p> <br>
+        <p>VW Golf 1.6 TDI (2015)</p> <br>
+        <p>Tesla Model 3 (2017)</p> <br>
         </div>
 
     </div>
-
 </section>
 
 <section class="featured" id="featured">
@@ -369,6 +373,13 @@
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="main.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javscript">
+    var fromDate;
+    $('#fromDate').on('change', function() {
+    fromDate = $(this).val();
+    });
+</script>
 <script type="text/javascript">
     (function() {
         emailjs.init('M1L4TUrOU0g_Y9VZ7');
@@ -389,6 +400,30 @@
                 .then(function (res) {
                     console.log('SUCCESS!');
                 })
+    }
+</script>
+
+<script>
+    function sendOrder(){
+        let name= document.getElementById("nameOrder").value;
+        let userMail= document.getElementById("costumerOrder").value;
+        let wishedCar= document.getElementById("wishedCar").value;
+        let date= document.getElementById("date").value;
+        let phoneNumber= document.getElementById("phoneOrder").value;
+        let message = document.getElementById("messageOrder").value;
+
+        var params = {
+            from_name: name,
+            from_email: userMail,
+            phone_number: phoneNumber,
+            wished_car: wishedCar,
+            date: date,
+            message: message
+        };
+        emailjs.send('service_x8gv3tl','template_sd56d2a', params)
+            .then(function (res) {
+                console.log('SUCCESS!');
+            })
     }
 
 

@@ -389,54 +389,6 @@ section{
     background: var(--blue);
 }
 
-.order .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
-.order .box-container .box{
-    padding:2rem;
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
-    border:var(--border);
-    text-align: center;
-}
-
-.order .box-container .box i{
-    height:6rem;
-    width:6rem;
-    line-height: 6rem;
-    border-radius: 50%;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    background:var(--blue);
-    color:var(--black);
-}
-
-.order .box-container .box h3{
-    font-size: 2.2rem;
-    color:var(--black);
-}
-
-.order .box-container .box p{
-    line-height: 1.8;
-    padding:1rem 0;
-    font-size: 1.4rem;
-    color:var(--light-color);
-}
-
-.order .box-container .box:hover{
-    background: var(--black);
-}
-
-.order .box-container .box:hover h3{
-    color:#fff;
-}
-
-.order .box-container .box:hover p{
-    color:#eee;
-}
 
 .featured .featured-slider{
     padding-bottom: 5rem;
@@ -586,7 +538,60 @@ section{
     color:var(--black);
 }
 
+.order .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
 
+.order .row .map{
+    flex:1 1 42rem;
+    width: 100%;
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    border-radius: .5rem;
+}
+
+.order .row form{
+    padding:2rem;
+    flex:1 1 42rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    text-align: center;
+    border-radius: .5rem;
+}
+
+.order .row form h3{
+    font-size: 3rem;
+    color:var(--black);
+    padding-bottom: 1rem;
+}
+
+.order .row form .box{
+    width:100%;
+    border-radius: .5rem;
+    padding:1rem 1.2rem;
+    font-size: 1.6rem;
+    text-transform: none;
+    border:var(--border);
+    margin:.7rem 0;
+}
+
+.order .row form textarea{
+    height:15rem;
+    resize: none;
+}
+
+#availableCars {
+    font-size: 1.5rem;
+    color: var(--black);
+    padding-left: 50px;
+}
+
+#availableCars h3 {
+    font-size: 3rem;
+}
 
 @media (max-width:991px){
 
@@ -650,6 +655,10 @@ section{
         margin:2rem;
         display: block;
         font-size: 2rem;
+    }
+
+    .container {
+        font-size: 500px;
     }
 
 }

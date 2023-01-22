@@ -1,0 +1,81 @@
+How to use Iconicars
+
+Sara Dejkoski, Muhamed Fajic, Ishak Sijamhodzic
+
+Part 1 – Installation and Running of the Application
+
+Step 1.: Open the provided zip file in the IDE of your choice
+Step 2.: In the terminal, type in npm install
+This will install the required package, as well as provide you with other files which are
+needed in order to use the services of Iconicars
+Step 3.: In the terminal, type in node server.js
+Step 4.: Click on the http://localhost:4000 in terminal, which will open the application
+in your browser
+
+You can also check out the GitHub repository:
+https://github.com/saradejkoski/Iconicars
+-----------------------------------------------------------------------------------------------------------------
+Part 2 – Using the Application
+
+Without logging in or signing up on our website, you can check out the services and
+the vehicles Iconicars provides. All the important vehicle information has been
+provided, as well as a picture.
+Iconicars provides the user with the ability of signing up and logging into our website.
+This can be done by clicking on the “Login” button in the top right-hand corner.
+Logging out is done in the same way by clicking on the “Logout” button.
+You can choose a vehicle which you like and click on the “Order this car” button,
+which will guide you to our order form which you fill out and send to us by clicking on
+the “Send” button. You will get a pop-up alert confirmation. If our team needs any
+extra information from you or wants to update you on a certain situation, they will get
+in touch with you.
+Your feedback means us a lot, which is why we have provided a contact/feedback
+form in the bottom part of the website. Here you can send us your feedback or any
+other question or recommendation you have for us.
+
+-----------------------------------------------------------------------------------------------------------------
+The MoSCoW criteria for Iconicars project
+
+Functional Requirements
+
+Must
+1. The System shall provide the user with the ability to login and register.
+2. The System shall provide the user with the ability to see all company's cars.
+3. The System shall provide the user with the ability to check the price of a particular
+car.
+4. The System shall provide a car's specifications.
+5. The System shall provide the user with the ability to place an order for an available
+vehicle for a specified time.
+
+Should
+1. The System should provide the user with the ability to cancel an order 24 hours
+before
+specified renting date.
+2. The System should provide the user with the ability to see available cars for a
+chosen
+time.
+3. The System should give the user an overview of their orders in a specific section.
+4. The System should provide the user with the ability to fill out a contact form for the
+rental company.
+
+Could
+1. The System could provide the user with the ability to subscribe for a newsletter.
+2. The System could provide the user with the ability to leave a review on his renting
+experience.
+3. The System could list the recommended vehicles by our company.
+-----------------------------------------------------------------------------------------------------------------
+Non-Functional Requirements
+
+Must
+1. The system shall require the user to provide a password with at least ten
+characters.
+2. The system shall provide photographs of every vehicle.
+3. The System shall be easy to use without any knowledge beforehand.
+4. The System GUI shall be in English.
+
+Should
+1. The System should store all passwords encrypted.
+2. The system should be responsive for all screen sizes.
+3. The system should allow one user to rent just one car at the time.
+
+Could
+1. The System will have an average response time of below 150ms.

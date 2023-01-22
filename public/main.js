@@ -76,7 +76,7 @@ registerButton.addEventListener("click", () => {
     var email = emailInput.value;
     var password = passwordInput.value;
     if (password.length < 10) {
-        alert("Error: Password must be at least 10 characters");
+        alert("Error: Password must be at least 10 characters long!");
     }
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function () {

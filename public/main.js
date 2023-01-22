@@ -1,12 +1,12 @@
 const xhttp = new XMLHttpRequest();
-xhttp.onload = function() {
+xhttp.onload = function () {
     // variable if user is logged in, JSON to Text.
     const isLoggedIn = JSON.parse(this.responseText);
-    if(isLoggedIn){
+    if (isLoggedIn) {
         // If user gets logged in -> getElementByID(userLoggedIn)
         document.getElementById("logout-btn").style.setProperty('visibility', "visible");
         document.getElementById("login-btn").style.setProperty('visibility', "hidden");
-    }else{
+    } else {
         // If not, the user goes to Registration.
         document.getElementById("login-btn").style.setProperty('visibility', "visible");
         document.getElementById("logout-btn").style.setProperty('visibility', "hidden");
@@ -31,9 +31,9 @@ const sendButton = document.getElementById("sendButton");
      and the tag "login" to visible.
      */
 
-logoutButton.addEventListener("click",() => {
+logoutButton.addEventListener("click", () => {
     const xhttp = new XMLHttpRequest();
-    xhttp.onload = function() {
+    xhttp.onload = function () {
         document.getElementById("logout-btn").style.setProperty('visibility', "hidden");
         document.getElementById("login-btn").style.setProperty('visibility', "visible");
     };
@@ -41,26 +41,26 @@ logoutButton.addEventListener("click",() => {
     xhttp.send();
 });
 
-loginButton.addEventListener("click",() => {
+loginButton.addEventListener("click", () => {
 
     var email = emailInput.value;
     var password = passwordInput.value;
 
 
     const xhttp = new XMLHttpRequest();
-    xhttp.onload = function() {
+    xhttp.onload = function () {
         console.log(JSON.parse(this.responseText).status);
         var isLoggedIn = JSON.parse(this.responseText).status;
-        if(isLoggedIn){
+        if (isLoggedIn) {
             // If Login is successful set "login-btn" tag to visible and "logout-btn" tag to hidden.
             alert("Willkommen!");
             document.getElementById("logout-btn").style.setProperty('visibility', "visible");
             document.getElementById("login-btn").style.setProperty('visibility', "hidden");
-            //reloadNotes();
+
             // After logging out email and password fields are empty.
             passwordInput.value = "";
             emailInput.value = "";
-        }else{
+        } else {
             alert("Password oder Email ist falsch!");
             document.getElementById("logout-btn").style.setProperty('visibility', "hidden");
             document.getElementById("login-btn").style.setProperty('visibility', "visible");
@@ -69,27 +69,27 @@ loginButton.addEventListener("click",() => {
     // With POST method email and password are sent.
     xhttp.open("POST", "login");
     xhttp.setRequestHeader("Content-type", "application/json");
-    xhttp.send(JSON.stringify({email,password}));
+    xhttp.send(JSON.stringify({email, password}));
 });
 
-registerButton.addEventListener("click",() => {
+registerButton.addEventListener("click", () => {
     var email = emailInput.value;
     var password = passwordInput.value;
-    if(password.length < 10) {
+    if (password.length < 10) {
         alert("Error: Password must be at least 10 characters");
     }
     const xhttp = new XMLHttpRequest();
-    xhttp.onload = function() {
+    xhttp.onload = function () {
         console.log(JSON.parse(this.responseText).status);
         var isLoggedIn = JSON.parse(this.responseText).status;
-        if(isLoggedIn){
+        if (isLoggedIn) {
             alert("Willkommen auf unserer Platform!");
             document.getElementById("logout-btn").style.setProperty('visibility', "visible");
             document.getElementById("login-btn").style.setProperty('visibility', "hidden");
-            //reloadNotes();
+
             passwordInput.value = "";
             emailInput.value = "";
-        }else{
+        } else {
             alert("Email bereits vorhanden");
             document.getElementById("logout-btn").style.setProperty('visibility', "hidden");
             document.getElementById("login-btn").style.setProperty('visibility', "visible");
@@ -97,46 +97,45 @@ registerButton.addEventListener("click",() => {
     };
     xhttp.open("POST", "register");
     xhttp.setRequestHeader("Content-type", "application/json");
-    xhttp.send(JSON.stringify({email,password}));
+    xhttp.send(JSON.stringify({email, password}));
 });
-
-
 
 
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
 
-menu.onclick = () =>{
+menu.onclick = () => {
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 }
 
-document.querySelector('#login-btn').onclick = () =>{
+document.querySelector('#login-btn').onclick = () => {
     document.querySelector('.login-form-container').classList.toggle('active');
 }
 
-document.querySelector('#close-login-form').onclick = () =>{
+document.querySelector('#close-login-form').onclick = () => {
     document.querySelector('.login-form-container').classList.remove('active');
 }
 
 
-window.onscroll = () =>{
+window.onscroll = () => {
 
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
 
-    if(window.scrollY > 0){
+    if (window.scrollY > 0) {
         document.querySelector('.header').classList.add('active');
-    }else{
+    } else {
         document.querySelector('.header').classList.remove('active');
-    };
+    }
+    ;
 
 };
 
 
-document.querySelector('.home').onmouseleave = (e) =>{
+document.querySelector('.home').onmouseleave = (e) => {
 
-    document.querySelectorAll('.home-parallax').forEach(elm =>{
+    document.querySelectorAll('.home-parallax').forEach(elm => {
 
         elm.style.transform = `translateX(0px) translateY(0px)`;
 
@@ -148,14 +147,14 @@ var swiper = new Swiper(".vehicles-slider", {
     grabCursor: true,
     centeredSlides: true,
     spaceBetween: 20,
-    loop:true,
+    loop: true,
     autoplay: {
         delay: 9500,
         disableOnInteraction: false,
     },
     pagination: {
         el: ".swiper-pagination",
-        clickable:true,
+        clickable: true,
     },
     breakpoints: {
         0: {
@@ -174,14 +173,14 @@ var swiper = new Swiper(".featured-slider", {
     grabCursor: true,
     centeredSlides: true,
     spaceBetween: 20,
-    loop:true,
+    loop: true,
     autoplay: {
         delay: 9500,
         disableOnInteraction: false,
     },
     pagination: {
         el: ".swiper-pagination",
-        clickable:true,
+        clickable: true,
     },
     breakpoints: {
         0: {

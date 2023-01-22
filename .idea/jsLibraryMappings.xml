@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{@emailjs/browser, font-awesome, smtp, swiper}" />
+    <file url="PROJECT" libraries="{@emailjs/browser, daterangepicker, font-awesome, jquery, moment, smtp, swiper}" />
     <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>

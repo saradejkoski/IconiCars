@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -25,9 +25,9 @@
 
     <nav class="navbar">
         <a href="#home">home</a>
-        <a href="#vehicles">vehicles</a>
+        <a href="#vehicles">recommended vehicles</a>
         <a href="#order">order</a>
-        <a href="#featured">featured</a>
+        <a href="#featured">all vehicles</a>
         <a href="#contact">contact</a>
     </nav>
 
@@ -70,7 +70,7 @@
 
 <section class="vehicles" id="vehicles">
 
-    <h1 class="heading"> Recommended <span>vehicles</span> </h1>
+    <h1 class="heading"> Recommended <span>vehicles</span></h1>
 
     <div class="swiper vehicles-slider">
 
@@ -81,7 +81,7 @@
                 <img src="image/brown-bmw3.jpg" alt="">
                 <div class="content">
                     <h3>BMW 318d (2019)</h3>
-                    <div class="price"> <span>price : </span> €130/Day </div>
+                    <div class="price"><span>price : </span> €130/Day</div>
                     <p>
                         5 seats
                         <span class="fas fa-circle"></span> 150 PS
@@ -97,7 +97,7 @@
                 <img src="image/gray-mercedes.jpg" alt="">
                 <div class="content">
                     <h3>Mercedes A 160 (2018)</h3>
-                    <div class="price"> <span>price : </span> €75/Day </div>
+                    <div class="price"><span>price : </span> €75/Day</div>
                     <p>
                         5 seats
                         <span class="fas fa-circle"></span> 109 PS
@@ -114,7 +114,7 @@
                 <img src="image/black-tesla3.jpg" alt="">
                 <div class="content">
                     <h3>Tesla Model 3 (2017)</h3>
-                    <div class="price"> <span>price : </span> €450/Day </div>
+                    <div class="price"><span>price : </span> €450/Day</div>
                     <p>
                         5 seats
                         <span class="fas fa-circle"></span> 306 PS
@@ -136,55 +136,46 @@
 
 <section class="order" id="order">
 
-    <h1 class="heading"> place an <span>order</span> </h1>
-<!--
-<div class="container">
+    <h1 class="heading"> place an <span>order</span></h1>
 
-    <label>From Date</label>
-    <input type="date" name="" max="" id="fromDate">
-    <br><br>
-    <label>To Date</label>
-    <input type="date" name="" max="" id="toDate">
-</div>
--->
     <div class="row">
-    <form onsubmit="sendOrder(); reset(); return false">
-        <h3>your order</h3>
-        <label>
-            <input type="text" id="nameOrder" placeholder="your name" required class="box">
-        </label>
-        <label>
-            <input type="email"  id="costumerOrder" placeholder="your email" required class="box">
-        </label>
+        <form onsubmit="sendOrder(); reset(); return false">
+            <h3>your order</h3>
+            <label>
+                <input type="text" id="nameOrder" placeholder="your name" required class="box">
+            </label>
+            <label>
+                <input type="email" id="costumerOrder" placeholder="your email" required class="box">
+            </label>
 
-        <label>
-            <input type="text"  id="wishedCar" placeholder="Wished Car" required class="box">
-        </label>
+            <label>
+                <input type="text" id="wishedCar" placeholder="Wished Car" required class="box">
+            </label>
 
-        <label>
-            <input type="text"  id="date" placeholder="Renting time period" required class="box">
-        </label>
+            <label>
+                <input type="text" id="date" placeholder="Renting time period" required class="box">
+            </label>
 
 
-        <label>
-            <input type="text"  id="phoneOrder" placeholder="phone no." required class="box">
-        </label>
-        <label>
-            <textarea placeholder="your message"  id="messageOrder" class="box" rows="10"></textarea>
-        </label>
-        <button type="submit" class="btn">Send</button>
-    </form>
+            <label>
+                <input type="text" id="phoneOrder" placeholder="phone no." required class="box">
+            </label>
+            <label>
+                <textarea placeholder="your message" id="messageOrder" class="box" rows="10"></textarea>
+            </label>
+            <button type="submit" class="btn">Send</button>
+        </form>
 
         <div id="availableCars">
-        <h3>Available Cars</h3> <br>
-        <a href="#featured"> <i class="fas fa-arrow-right"></i> View all our available Cars </a> <br>
+            <h3>Available Cars</h3> <br>
+            <a href="#featured"> <i class="fas fa-arrow-right"></i> View all our available Cars </a> <br>
             <br>
-        <p>Porsche 911 Carrera Cabriolet (2021)</p>  <br>
-        <p>BMW 318d (2019)</p> <br>
-        <p>Mercedes A 160 (2018)</p> <br>
-        <p>Audi Q3 (2018)</p> <br>
-        <p>VW Golf 1.6 TDI (2015)</p> <br>
-        <p>Tesla Model 3 (2017)</p> <br>
+            <p>Porsche 911 Carrera Cabriolet (2021)</p>  <br>
+            <p>BMW 318d (2019)</p> <br>
+            <p>Mercedes A 160 (2018)</p> <br>
+            <p>Audi Q3 (2018)</p> <br>
+            <p>VW Golf 1.6 TDI (2015)</p> <br>
+            <p>Tesla Model 3 (2017)</p> <br>
         </div>
 
     </div>
@@ -192,7 +183,7 @@
 
 <section class="featured" id="featured">
 
-    <h1 class="heading"> <span>featured</span> cars </h1>
+    <h1 class="heading"><span>featured</span> cars </h1>
 
     <div class="swiper featured-slider">
 
@@ -202,7 +193,7 @@
                 <img src="image/red-porsche.png" alt="">
                 <div class="content">
                     <h3>911 Carrera Cabriolet (2021)</h3>
-                    <div class="price"> <span>price : </span> €650/Day </div>
+                    <div class="price"><span>price : </span> €650/Day</div>
                     <p>
                         2 seats
                         <span class="fas fa-circle"></span> 2021
@@ -218,7 +209,7 @@
                 <img src="image/brown-bmw3.jpg" alt="">
                 <div class="content">
                     <h3>BMW 318d (2019)</h3>
-                    <div class="price"> <span>price : </span> €130/Day </div>
+                    <div class="price"><span>price : </span> €130/Day</div>
                     <p>
                         5 seats
                         <span class="fas fa-circle"></span> 150 PS
@@ -234,7 +225,7 @@
                 <img src="image/gray-mercedes.jpg" alt="">
                 <div class="content">
                     <h3>Mercedes A 160 (2018)</h3>
-                    <div class="price"> <span>price : </span> €75/Day </div>
+                    <div class="price"><span>price : </span> €75/Day</div>
                     <p>
                         5 seats
                         <span class="fas fa-circle"></span> 109 PS
@@ -250,7 +241,7 @@
                 <img src="image/black-audi-suv.jpg" alt="">
                 <div class="content">
                     <h3>Audi Q3 (2018)</h3>
-                    <div class="price"> <span>price : </span> €140/Day </div>
+                    <div class="price"><span>price : </span> €140/Day</div>
                     <p>
                         5 seats
                         <span class="fas fa-circle"></span> 149 PS
@@ -266,7 +257,7 @@
                 <img src="image/black-vw-golf.jpg" alt="">
                 <div class="content">
                     <h3>VW Golf 1.6 TDI (2015)</h3>
-                    <div class="price"> <span>price : </span> €60/Day </div>
+                    <div class="price"><span>price : </span> €60/Day</div>
                     <p>
                         5 seats
                         <span class="fas fa-circle"></span> 105 PS
@@ -282,7 +273,7 @@
                 <img src="image/black-tesla3.jpg" alt="">
                 <div class="content">
                     <h3>Tesla Model 3 (2017)</h3>
-                    <div class="price"> <span>price : </span> €450/Day </div>
+                    <div class="price"><span>price : </span> €450/Day</div>
                     <p>
                         5 seats
                         <span class="fas fa-circle"></span> 306 PS
@@ -309,7 +300,11 @@
 
     <div class="row">
 
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.524429805893!2d16.380158415805273!3d48.157973057718905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da9977c8a12a3%3A0xf3c966f81242b2ff!2sFH%20Campus%20Wien!5e0!3m2!1sde!2sat!4v1671531589056!5m2!1sde!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+        <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.524429805893!2d16.380158415805273!3d48.157973057718905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da9977c8a12a3%3A0xf3c966f81242b2ff!2sFH%20Campus%20Wien!5e0!3m2!1sde!2sat!4v1671531589056!5m2!1sde!2sat"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 
         <form onsubmit="sendMail(); reset(); return false">
             <h3>your feedback</h3>
@@ -317,13 +312,13 @@
                 <input type="text" id="name" placeholder="your name" required class="box">
             </label>
             <label>
-                <input type="email"  id="costumer" placeholder="your email" required class="box">
+                <input type="email" id="costumer" placeholder="your email" required class="box">
             </label>
             <label>
-                <input type="text"  id="phone" placeholder="phone no." required class="box">
+                <input type="text" id="phone" placeholder="phone no." required class="box">
             </label>
             <label>
-                <textarea placeholder="your message"  id="message" required class="box" rows="10"></textarea>
+                <textarea placeholder="your message" id="message" required class="box" rows="10"></textarea>
             </label>
             <button type="submit" class="btn">Send</button>
         </form>
@@ -347,9 +342,9 @@
         <div class="box">
             <h3>quick links</h3>
             <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href="#vehicles"> <i class="fas fa-arrow-right"></i> vehicles </a>
+            <a href="#vehicles"> <i class="fas fa-arrow-right"></i> recommended vehicles </a>
             <a href="#order"> <i class="fas fa-arrow-right"></i> order </a>
-            <a href="#featured"> <i class="fas fa-arrow-right"></i> featured </a>
+            <a href="#featured"> <i class="fas fa-arrow-right"></i> all vehicles </a>
             <a href="#contact"> <i class="fas fa-arrow-right"></i> contact </a>
         </div>
 
@@ -357,59 +352,59 @@
             <h3>contact info</h3>
             <a href="#"> <i class="fas fa-phone"></i> 01 6066877660 </a>
             <a href="#"> <i class="fas fa-phone"></i> +43 6605874598 </a>
-            <a href="#"> <i class="fas fa-envelope"></i> iconiccars@gmail.com </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Vienna, Austria - 1100 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> iconiccars1234@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Favoritenstraße 226, Vienna</a>
         </div>
 
     </div>
 
-    <div class="credit"> created by Iconicars Team | all rights reserved </div>
+    <div class="credit"> created by Iconicars Team | all rights reserved</div>
 
 </section>
-
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="main.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javscript">
     var fromDate;
     $('#fromDate').on('change', function() {
     fromDate = $(this).val();
     });
+
 </script>
 <script type="text/javascript">
-    (function() {
+    (function () {
         emailjs.init('M1L4TUrOU0g_Y9VZ7');
     })();
 </script>
 <script>
-    function sendMail(){
-        let name= document.getElementById("name").value;
-        let userMail= document.getElementById("costumer").value;
+    function sendMail() {
+        let name = document.getElementById("name").value;
+        let userMail = document.getElementById("costumer").value;
         let message = document.getElementById("message").value;
 
-            var params = {
-                from_name: name,
-                from_email: userMail,
-                message: message
-            };
-            emailjs.send('service_x8gv3tl','template_u0zf0w6', params)
-                .then(function (res) {
-                    console.log('SUCCESS!');
-                })
+        var params = {
+            from_name: name,
+            from_email: userMail,
+            message: message
+        };
+        emailjs.send('service_x8gv3tl', 'template_u0zf0w6', params)
+            .then(function (res) {
+                console.log("SUCCESS")
+                alert("Your feedback has been successfully submitted. Thank you for your feedback.")
+            })
     }
 </script>
 
 <script>
-    function sendOrder(){
-        let name= document.getElementById("nameOrder").value;
-        let userMail= document.getElementById("costumerOrder").value;
-        let wishedCar= document.getElementById("wishedCar").value;
-        let date= document.getElementById("date").value;
-        let phoneNumber= document.getElementById("phoneOrder").value;
+    function sendOrder() {
+        let name = document.getElementById("nameOrder").value;
+        let userMail = document.getElementById("costumerOrder").value;
+        let wishedCar = document.getElementById("wishedCar").value;
+        let date = document.getElementById("date").value;
+        let phoneNumber = document.getElementById("phoneOrder").value;
         let message = document.getElementById("messageOrder").value;
 
         var params = {
@@ -420,9 +415,9 @@
             date: date,
             message: message
         };
-        emailjs.send('service_x8gv3tl','template_sd56d2a', params)
+        emailjs.send('service_x8gv3tl', 'template_sd56d2a', params)
             .then(function (res) {
-                console.log('SUCCESS!');
+                alert("Your order has been successfully submitted")
             })
     }
 
